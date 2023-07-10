@@ -1,51 +1,53 @@
 [
   {
-    "name": "Git Clash ⚔️",
-    "description": "Developed a casual deck card game inspired by Git flow and Git commands, utilizing React ,Express.js and Socket.io",
+    "name": "Git Clash",
+    "description": "A casual deck card game inspired by Git flow and Git commands, utilizing React ,Express.js and Socket.io",
     "techStack": ["React", "TypeScript", "Nodejs", "SocketIo"],
-    "repo": "https://github.com/Afcam/arthur-campos-bandsite",
+    "repo": "https://github.com/Afcam/git-clash",
     "link": "https://gitclash.com/"
   },
+
   {
-    "name": "Bandsite",
+    "name": "afcampos.dev",
+    "description": "Boring personal site built with React and Mantine",
+    "techStack": ["TypeScript", "React", "mantine"],
+    "repo": "https://github.com/Afcam/afcampos.dev",
+    "link": "https://afcampos.dev/"
+  },
+  {
+    "name": "wiki.afcampos.dev",
+    "description": "This is my personal wiki where I share everything I know about this world in form of an online wiki built with Next.js",
+    "techStack": ["Nextjs", "React", "mantine"],
+    "repo": "https://github.com/Afcam/wiki.afcampos.dev",
+    "link": "https://wiki.afcampos.dev/"
+  },
+
+  {
+    "name": "Instock",
+    "description": "A Mock Inventory Management System. A full-stack application with a modern React front-end communicating with a robust Express back-en",
+    "techStack": ["React", "Sass", "Nodejs", "mysql"],
+    "repo": "",
+    "link": ""
+  },
+  {
+    "name": "Brainflix",
     "description": "A Mock band website that serves as an online platform for the band to connect with their fans and share their music and updates.",
-    "techStack": ["HTML", "CSS", "Sass", "javascript"],
-    "repo": "https://github.com/Afcam/arthur-campos-bandsite",
-    "link": "https://afcam.github.io/arthur-campos-bandsite/"
+    "techStack": ["HTML", "CSS", "Sass", "javascript", "herroku"],
+    "repo": "",
+    "link": ""
   },
   {
     "name": "Bandsite",
     "description": "A Mock band website that serves as an online platform for the band to connect with their fans and share their music and updates.",
     "techStack": ["HTML", "CSS", "Sass", "javascript"],
-    "repo": "https://github.com/Afcam/arthur-campos-bandsite",
+    "repo": "",
     "link": "https://afcam.github.io/arthur-campos-bandsite/"
   },
   {
-    "name": "Bandsite",
-    "description": "A Mock band website that serves as an online platform for the band to connect with their fans and share their music and updates.",
-    "techStack": ["HTML", "CSS", "Sass", "javascript"],
-    "repo": "https://github.com/Afcam/arthur-campos-bandsite",
-    "link": "https://afcam.github.io/arthur-campos-bandsite/"
-  },
-  {
-    "name": "Bandsite",
-    "description": "A Mock band website that serves as an online platform for the band to connect with their fans and share their music and updates.",
-    "techStack": ["HTML", "CSS", "Sass", "javascript"],
-    "repo": "https://github.com/Afcam/arthur-campos-bandsite",
-    "link": "https://afcam.github.io/arthur-campos-bandsite/"
-  },
-  {
-    "name": "Bandsite",
-    "description": "A Mock band website that serves as an online platform for the band to connect with their fans and share their music and updates.",
-    "techStack": ["HTML", "CSS", "Sass", "javascript"],
-    "repo": "https://github.com/Afcam/arthur-campos-bandsite",
-    "link": "https://afcam.github.io/arthur-campos-bandsite/"
-  },
-  {
-    "name": "Bandsite",
-    "description": "A Mock band website that serves as an online platform for the band to connect with their fans and share their music and updates.",
-    "techStack": ["HTML", "CSS", "Sass", "javascript"],
-    "repo": "https://github.com/Afcam/arthur-campos-bandsite",
-    "link": "https://afcam.github.io/arthur-campos-bandsite/"
+    "name": "TravelSite",
+    "description": "A Mock basic travel destination website, leveraging HTML, CSS, and component thinking.",
+    "techStack": ["HTML", "CSS", "Sass"],
+    "repo": "https://github.com/Afcam/arthur-campos-travelsite",
+    "link": "https://afcam.github.io/arthur-campos-travelsite/index.html"
   }
 ]

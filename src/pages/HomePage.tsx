@@ -5,7 +5,6 @@ import AppFooter from '../components/AppFooter';
 import AboutSection from '../components/AboutSection';
 import ToolsSection from '../components/ToolsSection';
 import ProjectsSection from '../components/ProjectsSection';
-import BlogSection from '../components/BlogSection';
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
           <AboutSection />
           <ProjectsSection />
           <ToolsSection />
-          {/* <BlogSection /> */}
         </Stack>
 
         <AppFooter />

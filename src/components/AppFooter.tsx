@@ -1,4 +1,4 @@
-import { ActionIcon, Footer, Group, Title } from '@mantine/core';
+import { Button, Footer, Group, Title, useMantineTheme } from '@mantine/core';
 import {
   IconBrandGithub,
   IconBrandLinkedin,
@@ -6,20 +6,42 @@ import {
 } from '@tabler/icons-react';
 
 export default function AppFooter() {
+  const theme = useMantineTheme();
+
   return (
     <Footer height="fit-content" p="xs">
       <Group position="apart">
         <Title order={6}>Arthur Faria Campos</Title>
         <Group>
-          <ActionIcon variant="subtle">
+          <Button
+            compact
+            component="a"
+            target="_blank"
+            variant="subtle"
+            href={'mailto:afcampos.dev'}
+          >
             <IconMail size="1.5rem" color="#EA4335" />
-          </ActionIcon>
-          <ActionIcon variant="subtle">
+          </Button>
+          <Button
+            compact
+            component="a"
+            target="_blank"
+            variant="subtle"
+            href="https://www.linkedin.com/in/afcampos/"
+          >
             <IconBrandLinkedin size="1.5rem" color="#0A66C2" />
-          </ActionIcon>
-          <ActionIcon variant="subtle">
-            <IconBrandGithub size="1.5rem" />
-          </ActionIcon>
+          </Button>
+          <Button
+            compact
+            component="a"
+            variant="subtle"
+            href="https://github.com/Afcam"
+          >
+            <IconBrandGithub
+              size="1.5rem"
+              color={theme.colorScheme === 'dark' ? 'white' : 'black'}
+            />
+          </Button>
         </Group>
       </Group>
     </Footer>

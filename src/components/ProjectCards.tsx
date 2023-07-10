@@ -37,47 +37,43 @@ export default function ProjectCards({
       shadow="sm"
       radius="md"
       withBorder
-      miw={matches ? '30%' : '100%'}
-      mih={matches ? '180px' : '130px'}
+      h="100%"
+      // miw={matches ? '32%' : '100%'}
+      // mih={matches ? '250px' : '130px'}
     >
       {/* <Card.Section>
         <Image src={bandsite} w="100%" alt="Norway" />
       </Card.Section> */}
-      <Stack py="xs" spacing="xs">
+      <Stack spacing="xs" h="100%">
         <Group position="apart">
           <Title order={5}>{name}</Title>
-          <TechStack techStack={techStack} size="1rem" />
+          <Group>
+            <Button
+              compact
+              component="a"
+              variant="subtle"
+              href={repo}
+              disabled={!repo}
+            >
+              <IconBrandGithub size="1rem" />
+            </Button>
+            <Button
+              compact
+              component="a"
+              variant="subtle"
+              href={link}
+              disabled={!link}
+            >
+              <IconExternalLink size="1rem" />
+            </Button>
+          </Group>
         </Group>
 
-        <Text size="sm" color="dimmed">
+        <Text size="sm" color="dimmed" h="100%">
           {description}
         </Text>
-        <Group>
-          <Button
-            compact
-            component="a"
-            variant="subtle"
-            href={repo}
-            disabled={false}
-          >
-            <IconBrandGithub size="1rem" />
-          </Button>
-          <Button
-            compact
-            component="a"
-            variant="subtle"
-            href={link}
-            disabled={!link}
-          >
-            <IconExternalLink size="1rem" />
-          </Button>
-        </Group>
+        <TechStack techStack={techStack} size="1.5rem" />
       </Stack>
     </Card>
   );
-}
-
-{
-  /* <Indicator label="New" size={16}>
-</Indicator> */
 }

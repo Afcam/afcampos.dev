@@ -6,7 +6,9 @@ import {
   IconBrandGit,
   IconBrandHtml5,
   IconBrandJavascript,
+  IconBrandMantine,
   IconBrandMysql,
+  IconBrandNextjs,
   IconBrandNodejs,
   IconBrandReact,
   IconBrandSass,
@@ -40,6 +42,10 @@ const renderLogo = (technology: string, size: string) => {
       return <IconBrandReact size={size} color="#61DAFB" />;
     case 'socketio':
       return <IconBrandSocketIo size={size} color="#010101" />;
+    case 'mantine':
+      return <IconBrandMantine size={size} color="#FFFFFF" />;
+    case 'nextjs':
+      return <IconBrandNextjs size={size} color="#FFFFFF" />;
     default:
       return null;
   }
@@ -55,7 +61,7 @@ const defaultProps: Props = {
 };
 export default function TechStack({ techStack, size }: Props) {
   return (
-    <Group>
+    <Group position="center">
       {techStack.map((technology) => (
         <div key={technology}>{renderLogo(technology, size)}</div>
       ))}
