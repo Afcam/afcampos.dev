@@ -9,15 +9,15 @@ import BlogSection from '../components/BlogSection';
 
 export default function Home() {
   return (
-    <Container size="md" p="xl">
-      <Stack spacing="xl" h="100%">
+    <Container size="md" p="xl" mih="100vh">
+      <Stack spacing="xl">
         <AppHeader />
 
         <Stack>
           <AboutSection />
           <ProjectsSection />
           <ToolsSection />
-          <BlogSection />
+          {/* <BlogSection /> */}
         </Stack>
 
         <AppFooter />

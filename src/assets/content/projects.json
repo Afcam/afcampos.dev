@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Git Clash ⚔️",
+    "description": "Developed a casual deck card game inspired by Git flow and Git commands, utilizing React ,Express.js and Socket.io",
+    "techStack": ["React", "TypeScript", "Nodejs", "SocketIo"],
+    "repo": "https://github.com/Afcam/arthur-campos-bandsite",
+    "link": "https://gitclash.com/"
+  },
+  {
+    "name": "Bandsite",
+    "description": "A Mock band website that serves as an online platform for the band to connect with their fans and share their music and updates.",
+    "techStack": ["HTML", "CSS", "Sass", "javascript"],
+    "repo": "https://github.com/Afcam/arthur-campos-bandsite",
+    "link": "https://afcam.github.io/arthur-campos-bandsite/"
+  },
+  {
+    "name": "Bandsite",
+    "description": "A Mock band website that serves as an online platform for the band to connect with their fans and share their music and updates.",
+    "techStack": ["HTML", "CSS", "Sass", "javascript"],
+    "repo": "https://github.com/Afcam/arthur-campos-bandsite",
+    "link": "https://afcam.github.io/arthur-campos-bandsite/"
+  },
+  {
+    "name": "Bandsite",
+    "description": "A Mock band website that serves as an online platform for the band to connect with their fans and share their music and updates.",
+    "techStack": ["HTML", "CSS", "Sass", "javascript"],
+    "repo": "https://github.com/Afcam/arthur-campos-bandsite",
+    "link": "https://afcam.github.io/arthur-campos-bandsite/"
+  },
+  {
+    "name": "Bandsite",
+    "description": "A Mock band website that serves as an online platform for the band to connect with their fans and share their music and updates.",
+    "techStack": ["HTML", "CSS", "Sass", "javascript"],
+    "repo": "https://github.com/Afcam/arthur-campos-bandsite",
+    "link": "https://afcam.github.io/arthur-campos-bandsite/"
+  },
+  {
+    "name": "Bandsite",
+    "description": "A Mock band website that serves as an online platform for the band to connect with their fans and share their music and updates.",
+    "techStack": ["HTML", "CSS", "Sass", "javascript"],
+    "repo": "https://github.com/Afcam/arthur-campos-bandsite",
+    "link": "https://afcam.github.io/arthur-campos-bandsite/"
+  },
+  {
+    "name": "Bandsite",
+    "description": "A Mock band website that serves as an online platform for the band to connect with their fans and share their music and updates.",
+    "techStack": ["HTML", "CSS", "Sass", "javascript"],
+    "repo": "https://github.com/Afcam/arthur-campos-bandsite",
+    "link": "https://afcam.github.io/arthur-campos-bandsite/"
+  }
+]

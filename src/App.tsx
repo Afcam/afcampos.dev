@@ -6,7 +6,7 @@ import {
   createEmotionCache,
   type ColorScheme,
 } from '@mantine/core';
-import Home from './pages/HomePage';
+import HomePage from './pages/HomePage';
 
 const myCache = createEmotionCache({ key: 'afcampos' });
 
@@ -34,7 +34,7 @@ export default function App() {
       >
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<HomePage />} />
           </Routes>
         </BrowserRouter>
       </MantineProvider>
