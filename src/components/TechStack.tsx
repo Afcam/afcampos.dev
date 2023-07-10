@@ -55,11 +55,8 @@ interface Props {
   techStack: string[];
   size: string;
 }
-const defaultProps: Props = {
-  techStack: [],
-  size: '1rem',
-};
-export default function TechStack({ techStack, size }: Props) {
+
+export default function TechStack({ techStack = [], size = '1rem' }: Props) {
   return (
     <Group position="center">
       {techStack.map((technology) => (

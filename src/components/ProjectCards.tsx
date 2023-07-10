@@ -1,19 +1,5 @@
-import {
-  ActionIcon,
-  Button,
-  Card,
-  Group,
-  HoverCard,
-  Image,
-  Indicator,
-  Spoiler,
-  Stack,
-  Text,
-  Title,
-} from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
+import { Button, Card, Group, Stack, Text, Title } from '@mantine/core';
 import { IconBrandGithub, IconExternalLink } from '@tabler/icons-react';
-import bandsite from '../assets/bansite.png.png';
 import TechStack from './TechStack';
 
 interface Props {
@@ -31,19 +17,8 @@ export default function ProjectCards({
   repo,
   link,
 }: Props) {
-  const matches = useMediaQuery('(min-width: 700px)');
   return (
-    <Card
-      shadow="sm"
-      radius="md"
-      withBorder
-      h="100%"
-      // miw={matches ? '32%' : '100%'}
-      // mih={matches ? '250px' : '130px'}
-    >
-      {/* <Card.Section>
-        <Image src={bandsite} w="100%" alt="Norway" />
-      </Card.Section> */}
+    <Card shadow="sm" radius="md" withBorder h="100%">
       <Stack spacing="xs" h="100%">
         <Group position="apart">
           <Title order={5}>{name}</Title>

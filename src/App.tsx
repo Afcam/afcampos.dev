@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useLocalStorage, useFavicon } from '@mantine/hooks';
+import { useLocalStorage } from '@mantine/hooks';
 import {
   MantineProvider,
   ColorSchemeProvider,
