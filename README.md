@@ -3,11 +3,11 @@
 <div align="center">
 
 [![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=brightgreen&up_message=online&url=https%3A%2F%2Fafcampos.dev)](https://afcampos.dev)
-[![GitHub license](https://img.shields.io/github/license/your-username/your-repo.svg)](https://github.com/your-username/your-repo/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/Afcam/afcampos.dev)](https://github.com/Afcam/afcampos.dev/blob/master/LICENSE)
 
 </div>
 
-This is the repository for my personal website, [afcampos.dev](https://afcampos.dev). It serves as a showcase of my portfolio, blog, and other information about myself. The website is built using Vite, a fast and efficient frontend development tool.
+This is the repository for my personal website, [afcampos.dev](https://afcampos.dev). It serves as a showcase of my portfolio, blog, and other information about myself. The website is built using React with Vite.
 
 ## Technologies Used
 
@@ -74,5 +74,3 @@ Let's connect and create something amazing together!
 ## License
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-
-The code and underlying structure of this project are licensed under the MIT License. However, please note that the personal content, such as my journey, experiences, and insights shared within the project, are protected by copyright and may not be reproduced or used without explicit permission.
