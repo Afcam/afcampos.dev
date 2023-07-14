@@ -45,6 +45,7 @@ export default function ProjectCard({
               compact
               component="a"
               variant="subtle"
+              target="_blank"
               href={repo}
               disabled={!repo}
             >
@@ -54,6 +55,7 @@ export default function ProjectCard({
               compact
               component="a"
               variant="subtle"
+              target="_blank"
               href={link}
               disabled={!link}
             >

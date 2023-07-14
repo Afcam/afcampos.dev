@@ -1,7 +1,7 @@
 import { Container, Stack, Space } from '@mantine/core';
 
 import AppHeader from '../components/AppHeader';
-import Footer from '../components/Footer';
+import AppFooter from '../components/AppFooter';
 import AboutSection from '../components/AboutSection';
 import ToolsSection from '../components/ToolsSection';
 import ProjectsSection from '../components/ProjectsSection';
@@ -16,7 +16,7 @@ export default function Home() {
         {/* <ToolsSection /> */}
       </Stack>
       <Space h="xl" />
-      <Footer />
+      <AppFooter />
     </Container>
   );
 }

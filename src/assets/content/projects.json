@@ -9,7 +9,7 @@
 
   {
     "name": "afcampos.dev",
-    "description": "Boring personal site built with React and Mantine",
+    "description": "My personal site built with React and Mantine",
     "techStack": ["TypeScript", "React", "mantine"],
     "repo": "https://github.com/Afcam/afcampos.dev",
     "link": "https://afcampos.dev/"
@@ -31,8 +31,8 @@
   },
   {
     "name": "Brainflix",
-    "description": "A Mock band website that serves as an online platform for the band to connect with their fans and share their music and updates.",
-    "techStack": ["HTML", "CSS", "Sass", "javascript", "herroku"],
+    "description": "A Mock prototype for a new video streaming platform called BrainFlix.",
+    "techStack": ["HTML", "Sass", "javascript", "Nodejs"],
     "repo": "",
     "link": ""
   },
@@ -45,7 +45,7 @@
   },
   {
     "name": "TravelSite",
-    "description": "A Mock basic travel destination website, leveraging HTML, CSS, and component thinking.",
+    "description": "A basic mock travel destination website, leveraging HTML, CSS, and component thinking.",
     "techStack": ["HTML", "CSS", "Sass"],
     "repo": "https://github.com/Afcam/arthur-campos-travelsite",
     "link": "https://afcam.github.io/arthur-campos-travelsite/index.html"

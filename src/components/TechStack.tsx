@@ -1,4 +1,4 @@
-import { Group, useMantineTheme } from '@mantine/core';
+import { Group, Tooltip, useMantineTheme } from '@mantine/core';
 import {
   IconBrandAws,
   IconBrandCpp,
@@ -64,7 +64,9 @@ export default function TechStack({ techStack = [], size = '1rem' }: Props) {
   return (
     <Group>
       {techStack.map((technology) => (
-        <div key={technology}>{renderLogo(technology, size)}</div>
+        <Tooltip label={technology} openDelay={500} key={technology}>
+          {renderLogo(technology, size)}
+        </Tooltip>
       ))}
     </Group>
   );
