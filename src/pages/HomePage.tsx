@@ -1,25 +1,22 @@
-import { Container, Stack } from '@mantine/core';
+import { Container, Stack, Space } from '@mantine/core';
 
 import AppHeader from '../components/AppHeader';
-import AppFooter from '../components/AppFooter';
+import Footer from '../components/Footer';
 import AboutSection from '../components/AboutSection';
 import ToolsSection from '../components/ToolsSection';
 import ProjectsSection from '../components/ProjectsSection';
 
 export default function Home() {
   return (
-    <Container size="md" p="xl" mih="100vh">
-      <Stack spacing="xl">
-        <AppHeader />
-
-        <Stack>
-          <AboutSection />
-          <ProjectsSection />
-          <ToolsSection />
-        </Stack>
-
-        <AppFooter />
+    <Container size="md" p="xl">
+      <AppHeader />
+      <Stack p="md" h="100%">
+        <AboutSection />
+        <ProjectsSection />
+        {/* <ToolsSection /> */}
       </Stack>
+      <Space h="xl" />
+      <Footer />
     </Container>
   );
 }

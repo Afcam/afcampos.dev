@@ -1,6 +1,7 @@
 import { Button, Card, Group, Stack, Text, Title } from '@mantine/core';
 import { IconBrandGithub, IconExternalLink } from '@tabler/icons-react';
 import TechStack from './TechStack';
+import { useMediaQuery } from '@mantine/hooks';
 
 interface Props {
   name: string;
@@ -10,19 +11,36 @@ interface Props {
   link: string;
 }
 
-export default function ProjectCards({
+export default function ProjectCard({
   name,
   description,
   techStack,
   repo,
   link,
 }: Props) {
+  const matches = useMediaQuery('(min-width: 56.25em)');
   return (
-    <Card shadow="sm" radius="md" withBorder h="100%">
-      <Stack spacing="xs" h="100%">
+    <Card
+      shadow="sm"
+      radius="md"
+      p="sm"
+      withBorder
+      sx={(theme) => ({
+        width: matches ? '32%' : '100%',
+        height: '10rem',
+        cursor: 'pointer',
+        '&:hover': {
+          backgroundColor:
+            theme.colorScheme === 'dark'
+              ? theme.colors.dark[5]
+              : theme.colors.gray[1],
+        },
+      })}
+    >
+      <Stack spacing="xs" justify="space-between" h="100%">
         <Group position="apart">
           <Title order={5}>{name}</Title>
-          <Group>
+          <Group spacing="xs">
             <Button
               compact
               component="a"
@@ -44,10 +62,10 @@ export default function ProjectCards({
           </Group>
         </Group>
 
-        <Text size="sm" color="dimmed" h="100%">
+        <Text size="xs" color="dimmed" lineClamp={3}>
           {description}
         </Text>
-        <TechStack techStack={techStack} size="1.5rem" />
+        <TechStack techStack={techStack} size="1rem" />
       </Stack>
     </Card>
   );

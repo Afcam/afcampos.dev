@@ -15,7 +15,7 @@ export default function AppHeader() {
   return (
     <Header height="fit-content" p="xs">
       <Group position="apart">
-        <Title order={1}>Afcam</Title>
+        <Title order={4}>Afcam</Title>
         <Switch
           size="sm"
           color={colorScheme === 'dark' ? 'gray' : 'dark'}

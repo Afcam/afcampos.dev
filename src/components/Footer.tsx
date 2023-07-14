@@ -1,15 +1,21 @@
-import { Button, Footer, Group, Title, useMantineTheme } from '@mantine/core';
+import {
+  Button,
+  Footer as MantineFooter,
+  Group,
+  Title,
+  useMantineTheme,
+} from '@mantine/core';
 import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconMail,
 } from '@tabler/icons-react';
 
-export default function AppFooter() {
+export default function Footer() {
   const theme = useMantineTheme();
 
   return (
-    <Footer height="fit-content" p="xs">
+    <MantineFooter height="fit-content" p="xs">
       <Group position="apart">
         <Title order={6}>Arthur Faria Campos</Title>
         <Group>
@@ -44,6 +50,6 @@ export default function AppFooter() {
           </Button>
         </Group>
       </Group>
-    </Footer>
+    </MantineFooter>
   );
 }
