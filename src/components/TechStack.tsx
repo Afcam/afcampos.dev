@@ -1,4 +1,4 @@
-import { Group } from '@mantine/core';
+import { Group, Tooltip, useMantineTheme } from '@mantine/core';
 import {
   IconBrandAws,
   IconBrandCpp,
@@ -17,6 +17,10 @@ import {
 } from '@tabler/icons-react';
 
 const renderLogo = (technology: string, size: string) => {
+  const theme = useMantineTheme();
+  const themeColor =
+    theme.colorScheme === 'dark' ? theme.colors.gray[0] : theme.colors.dark[8];
+
   switch (technology.toLowerCase()) {
     case 'html':
       return <IconBrandHtml5 size={size} color="#E34F26" />;
@@ -41,11 +45,11 @@ const renderLogo = (technology: string, size: string) => {
     case 'react':
       return <IconBrandReact size={size} color="#61DAFB" />;
     case 'socketio':
-      return <IconBrandSocketIo size={size} color="#010101" />;
+      return <IconBrandSocketIo size={size} color={themeColor} />;
     case 'mantine':
-      return <IconBrandMantine size={size} color="#FFFFFF" />;
+      return <IconBrandMantine size={size} color={themeColor} />;
     case 'nextjs':
-      return <IconBrandNextjs size={size} color="#FFFFFF" />;
+      return <IconBrandNextjs size={size} color={themeColor} />;
     default:
       return null;
   }
@@ -58,9 +62,11 @@ interface Props {
 
 export default function TechStack({ techStack = [], size = '1rem' }: Props) {
   return (
-    <Group position="center">
+    <Group>
       {techStack.map((technology) => (
-        <div key={technology}>{renderLogo(technology, size)}</div>
+        <Tooltip label={technology} openDelay={500} key={technology}>
+          {renderLogo(technology, size)}
+        </Tooltip>
       ))}
     </Group>
   );

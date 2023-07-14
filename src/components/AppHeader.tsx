@@ -1,37 +1,69 @@
 import {
+  Button,
   Group,
   Header,
-  Switch,
   Title,
-  useMantineColorScheme,
+  Tooltip,
   useMantineTheme,
 } from '@mantine/core';
-import { IconMoonStars, IconSun } from '@tabler/icons-react';
+import {
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconMail,
+} from '@tabler/icons-react';
 
 export default function AppHeader() {
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const theme = useMantineTheme();
 
   return (
     <Header height="fit-content" p="xs">
       <Group position="apart">
-        <Title order={1}>Afcam</Title>
-        <Switch
-          size="sm"
-          color={colorScheme === 'dark' ? 'gray' : 'dark'}
-          offLabel={
-            <IconSun size="auto" stroke={2.5} color={theme.colors.yellow[4]} />
-          }
-          onLabel={
-            <IconMoonStars
-              size="auto"
-              stroke={2.5}
-              color={theme.colors.dark[6]}
-            />
-          }
-          checked={colorScheme === 'dark'}
-          onChange={() => toggleColorScheme()}
-        />
+        <Tooltip label="Hi. This is just my Nickname." openDelay={500}>
+          <Title order={4}>Afcam</Title>
+        </Tooltip>
+
+        <Group>
+          <Tooltip label="Gmail" openDelay={300}>
+            <Button
+              px="5px"
+              compact
+              component="a"
+              target="_blank"
+              variant="subtle"
+              href={'mailto:afcampos.dev'}
+            >
+              <IconMail size="1.5rem" color="#EA4335" />
+            </Button>
+          </Tooltip>
+
+          <Tooltip label="My Linkedin Profile" openDelay={300}>
+            <Button
+              px="5px"
+              compact
+              component="a"
+              target="_blank"
+              variant="subtle"
+              href="https://www.linkedin.com/in/afcampos/"
+            >
+              <IconBrandLinkedin size="1.5rem" color="#0A66C2" />
+            </Button>
+          </Tooltip>
+
+          <Tooltip label="My Github Profile" openDelay={300}>
+            <Button
+              px="5px"
+              compact
+              component="a"
+              variant="subtle"
+              href="https://github.com/Afcam"
+            >
+              <IconBrandGithub
+                size="1.5rem"
+                color={theme.colorScheme === 'dark' ? 'white' : 'black'}
+              />
+            </Button>
+          </Tooltip>
+        </Group>
       </Group>
     </Header>
   );
